@@ -1,4 +1,3 @@
-import Skeleton from '@/components/UI/skeleton/Skeleton'
 import Button from '@/components/UI/buttons/Button';
 import ButtonLink from '@/components/UI/buttons/ButtonLink';
 import PrimaryLink from '@/components/UI/buttons/PrimaryLink';
@@ -6,10 +5,15 @@ import UnderlineLink from '@/components/UI/buttons/UnderlineLink';
 import UnstyledLink from '@/components/UI/buttons/UnstyledLink';
 import Container from '@/components/UI/grid/Container';
 import NextImage from '@/components/UI/Image/NextImage';
+import Skeleton from '@/components/UI/skeleton/Skeleton';
 import Heading from '@/components/UI/typography/Heading';
 import Paragraph from '@/components/UI/typography/Paragraph';
 
 import { Routes } from '@/constant/routes';
+
+import FramerMotionExample from './examples/FramerMotionExample';
+import SonnerExample from './examples/SonnerExample';
+import SwiperExample from './examples/SwiperExample';
 
 import FacebookIcon from '~/svg/facebook.svg';
 
@@ -175,6 +179,34 @@ export default async function ComponentsPage() {
             </Heading>
             <Paragraph className='mt-5'>Skeleton with shimmer effect</Paragraph>
             <Skeleton className='h-72 w-72' />
+          </li>
+          <li className='space-y-2'>
+            <Heading level={3} as='h2'>
+              New Libraries Examples
+            </Heading>
+            <Paragraph className='mt-5'>Examples of newly added libraries</Paragraph>
+            <div className='space-y-4'>
+              <div>
+                <h4 className='mb-2 font-semibold'>Framer Motion</h4>
+                <p className='mb-2 text-sm text-gray-600'>Animated div with hover effect</p>
+                <FramerMotionExample />
+              </div>
+              <div>
+                <h4 className='mb-2 font-semibold'>Sonner</h4>
+                <p className='mb-2 text-sm text-gray-600'>Toast notifications</p>
+                <SonnerExample />
+              </div>
+              <div>
+                <h4 className='mb-2 font-semibold'>Swiper</h4>
+                <p className='mb-2 text-sm text-gray-600'>Slider/carousel component</p>
+                <SwiperExample />
+              </div>
+              <div>
+                <h4 className='mb-2 font-semibold'>usehooks-ts</h4>
+                <p className='mb-2 text-sm text-gray-600'>Useful React hooks collection</p>
+                <p className='text-sm'>useLocalStorage, useDebounce, useWindowSize, etc.</p>
+              </div>
+            </div>
           </li>
         </ol>
       </Container>
