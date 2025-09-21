@@ -4,13 +4,12 @@ import type { LinkHTMLAttributes } from 'react';
 import { basePath, siteUrl } from './env';
 
 const defaultMeta = {
-  siteName: 'Next.js Starter',
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  siteName: 'Your Project Name',
+  title: 'Your Project Title',
   divider: '|',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  author: '',
-  twitter: '',
+  description: 'Your project description - update this in src/constant/seo.ts',
+  author: 'Your Name',
+  twitter: '@your-handle',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#3b82f6' },
     { media: '(prefers-color-scheme: dark)', color: '#172554' },

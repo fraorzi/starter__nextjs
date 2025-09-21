@@ -6,7 +6,7 @@ const Copyright = () => {
 
   return (
     <Paragraph size='xs' className='text-opacity-80 text-white'>
-      Copyright &copy;{currentYear} Your Company
+      Copyright &copy;{currentYear} Your Company Name
     </Paragraph>
   );
 };
